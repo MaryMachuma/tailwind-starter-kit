@@ -1,4 +1,4 @@
-y# Getting Started with TailwindCSS - Building a Fashion E-commerce Landing Page
+ Getting Started with TailwindCSS - Building a Fashion E-commerce Landing Page
 
 ## 1. Title & Objective
 
