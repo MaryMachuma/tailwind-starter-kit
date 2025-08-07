@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Fashion Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Simple animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        /* Smooth hover effects */
+        .hover-grow:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-pink-600">StyleHub</h1>
+                <div class="space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-pink-600">Home</a>
+                    <a href="#products" class="text-gray-600 hover:text-pink-600">Shop</a>
+                    <a href="#about" class="text-gray-600 hover:text-pink-600">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-pink-100 to-purple-100 py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center fade-in">
+            <h2 class="text-5xl font-bold text-gray-800 mb-6">
+                Fashion That <span class="text-pink-600">Speaks</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Discover the latest trends and express your unique style with our curated collection of premium fashion pieces.
+            </p>
+            <button class="bg-pink-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-pink-700 hover-grow">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Collection</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-grow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://i.pinimg.com/1200x/15/e2/50/15e25026abdcbf6d93c4fa7025e4f8c7.jpg" 
+                             alt="Elegant Summer Dress" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Elegant Summer Dress</h4>
+                        <p class="text-gray-600 mb-4">Perfect for sunny days and special occasions</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-600">KSh 8,900</span>
+                            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-grow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://i.pinimg.com/1200x/06/31/cc/0631cc035354b67489c2331779a70ec9.jpg" 
+                             alt="Designer Handbag" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Designer Handbag</h4>
+                        <p class="text-gray-600 mb-4">Luxury leather handbag for every occasion</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-600">KSh 14,900</span>
+                            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-grow">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://i.pinimg.com/1200x/a1/b6/ec/a1b6ec42484b66aed4a58d793faf90b7.jpg" 
+                             alt="Fashion Accessories" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Fashion Accessories</h4>
+                        <p class="text-gray-600 mb-4">Complete your look with stylish accessories</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-600">KSh 3,900</span>
+                            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-gray-800 mb-8">About StyleHub</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6 text-left">
+                        At StyleHub, we believe fashion is a form of self-expression. Our carefully curated collection brings you the latest trends and timeless pieces that help you showcase your unique personality.
+                    </p>
+                    <p class="text-lg text-gray-600 text-left">
+                        From casual wear to special occasion outfits, we have everything you need to build a wardrobe that truly represents you.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-lg p-12">
+                    <div class="text-pink-600">
+                        <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h4 class="text-xl font-semibold text-gray-800">Quality Guaranteed</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-800 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-8">Get In Touch</h3>
+            <p class="text-xl mb-8">Have questions? We'd love to hear from you!</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <svg class="w-8 h-8 mx-auto mb-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    <p class="font-semibold">Email</p>
+                    <p class="text-gray-300">machmary173@gmail.com</p>
+                </div>
+                
+                <div>
+                    <svg class="w-8 h-8 mx-auto mb-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="font-semibold">Location</p>
+                    <p class="text-gray-300">Kenya</p>
+                </div>
+                
+                <div>
+                    <svg class="w-8 h-8 mx-auto mb-4 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                    </svg>
+                    <p class="font-semibold">Phone</p>
+                    <p class="text-gray-300">(+254 704 626 801)</p>
+                </div>
+            </div>
+            
+            <button class="bg-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-700 hover-grow">
+                Contact Us
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400 mb-4">&copy; 2024 StyleHub. All rights reserved.</p>
+            <div class="space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation when elements come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+
+</body>
+</html>
